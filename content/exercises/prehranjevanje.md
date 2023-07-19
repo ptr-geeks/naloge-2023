@@ -13,7 +13,7 @@ Mica vsak dan lahko poje samo določeno količino rastlin podano z `n`. Prav tak
 
 Mica po jedla dokler ne bo sita, tj. dokler ne poje `n` rastlin.
 
-Kot vhod v prvi vrstici dobiš `n`, ki predstavlja koliko rastlin mora Mica pojesti. V naslednji vrstici dobiš dolžino zaporedja rastlin na katerega bo Mica naletela. V tretji vrstici dobiš zaporedje znakov, ki predstavlja rastline v takem vrstnem redu kot na njih naleti Mica.
+Kot vhod v prvi vrstici dobiš `n`, ki predstavlja koliko rastlin mora Mica pojesti. V naslednji vrstici dobiš dolžino zaporedje rastlin na katerega bo Mica naletela. V tretji vrstici dobiš zaporedje znakov, ki predstavlja rastline v takem vrstnem redu, kot na njih naleti Mica.
 
 Izpiši na kateri zaporedni rastlini Mica neha jesti. Začnemo šteti z 1.
 
