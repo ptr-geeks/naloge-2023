@@ -1,115 +1,72 @@
 ---
-title: 0. naloga - Ogrevanje
+title: 0. naloga - Ogrevanje s Fibonaccijevim zaporedjem
 weight: 10
+math: true
 ---
 
-Filip se je zaljubil, a ni prepričan ali je ljubezen obojestranska. Zato na travniku poišče marjetico in trga njene cvetne liste: "Ljubi", "Ne ljubi", "Ljubi", "Ne ljubi"... Pomagaj mu napisati računalniški program, ki sprejme število listkov na marjetici in odgovori z "Ljubi" ali "Ne ljubi". Filip štetje vedno začne z "Ljubi".
+Tudi tokrat se bomo skupaj ogreli, ampak za razliko od prejšnjih let, se bomo tokrat namesto brezglavega pozdravljanja sveta in ugotavljanja, ali ga ljudi ali ne, potopili v malo bolj algoritmične vode.
 
-**Primer 1:**
-```
-Vhod: 12
-Izhod: "Ne ljubi"
-```
+Fibonaccijevo zaporedje je zaporedje, kjer je vsaka številka seštevek prejšnjih dveh. Prvo omembo Fibonaccijevih števil je možno zaslediti že v zgodnji Indijski matematiki (približno 200 let pred našim štetjem), zahodni evropi pa ga je predstavil Leonardo iz Pise (Leonardo Bonacci) leta 1202. Po njemu je danes to zaporedje tudi poimenovano.
 
-**Primer 2:**
-```
-Vhod: 15
-Izhod: "Ljubi"
-```
+Števila zaporedja najpogosteje zapišemo, kot \\(F_n\\), kjer \\(n\\) predstavlja mesto, na katerem se število nahaja. Definicija zaporedja je sledeča:
 
-### Rešitev naloge
+$$F_0 = 1, F_1 = 1$$
+$$F_n = F_{n-1} + F_{n-2}$$
 
-Zgornja naloga je rešena najprej v psevevdokodi, potem pa še v programskih jezikih Python in Javascript. [Psevodkoda](https://sl.wikipedia.org/wiki/Psevdokoda) je način, kako predstaviti algoritem v človeku čim bolj razumljivi obliki. Ni treba, da se držiš spodnjih primerov, ki so navedeni le za lažjo predstavo.
+Napišimo program, ki izračuna Fibonaccijevo število na poljubnem mestu zaporedja. Nalogo bomo rešili najprej s pomočjo [Psevdokode](https://sl.wikipedia.org/wiki/Psevdokoda), potem pa si bomo pogledali še rešitev v konkretnem programskem jeziku (ali dveh).
 
-Če ne poznaš nobenega programskega jezika, bodi brez skrbi, saj ti bomo z osnovami pomagali mi. Postopek in rešitev lahko opiši z
-besedami. Pomembno je, da problem poizkusiš razbiti na čim manjše koščke. Najboljši približek bo, če bodo stavki kratki npr. `število povečamo za 1`. Zapišeš lahko tudi bolj matematično kot npr. `število = število + 1` ali `število += 1`.
+Skozi naloge lahko postopek in rešitev opišeš tudi z besedami, tako da bodi brez skrbi, tudi če nimaš še nobenih izkušenj s programskimi jeziki.
 
-#### Naivna rešitev v psevdokodi
+### Rešitev
+
+Najbolj naivna in direktna rešitev, čeprav se sliši čudno, po navadi uporablja [rekurzijo](https://sl.wikipedia.org/wiki/Rekurzija), kar je logično že iz same definicije zaporedja.
 
 ```python
-# Kar je za znakom #, računalnik preskoči. To je komentar
-# Prebere število listov in shrani v spremenljivko steviloListov
-steviloListov = preberiSteviloListov()
-ljubi = 'Ljubi' # Začnemo z ljubi, zapomnimo si to vrednost v "ljubi"
-
-# Ponavljaj je zanka, tako povemo računalniku, naj nekaj dela
-# dokler pogoj velja.
-ponavljaj, dokler je steviloListov večje od 0: # dokler ima marjetica liste
-    # Vse kar je zamaknenjo (tipka TAB), sodi v zanko
-    # Ko zaključi (pogoj ne drži več), skoči iz zanke
-    steviloListov = steviloListov - 1 # odtrgamo list
-    če ljubi == 'Ljubi' # Če res ljubi
-        ljubi = 'Ne ljubi' # Potem ne ljubi več
-    sicer # Če zgornji pogoj ne velja, bo šel računalnik v sicer
-        ljubi = 'Ljubi'
-
-izpiši vrednost ljubi # v ljubi smo si zapomnili, kje smo ostali
+# Definirajmo zaporedje, kot fib(n)
+fib(n)
+    # Po definiciji sta prvi dve števili vedno 1
+    če n = 0 ali n = 1
+        1
+    # Vsako naslednje pa je seštevek prejšnjih dveh
+    fib(n-1) + fib(n-2)
 ```
 
-Zgornji način je najbolj naiven. Kaj če ime marjetica ogromno, na primer 984.631.354.687.354 listov? Trajalo bo lep čas, da odšteva po 1 navzdol proti 0.
+Zgornja rešitev ne upošteva, da smo ljudje po navadi malo bolj navihani in ne bo delovala, če bi slučajno hoteli `fib(-5)`. Prav tako je nalogo mogoče rešiti tudi brez uporabe rekurzije. Naj bo to domača naloga za bralca, kajti rešitev je več kot očitna.
 
-Z nekaj matematike problem postane sila preprost (in hiter). Treba je le preveriti, ali je število sodo ali liho, torej kakšen je ostanek pri deljenju z dve.
+### Rešitev v programskem jeziku Go
 
-#### Optimalna rešitev v psevdokodi
+Pa si poglejmo zgornjo rešitev še v programskem jeziku Go.
 
-```python
-steviloListov = preberiSteviloListov()
+```golang
+package main
 
-# vemo da se zanka izteče z ljubi, če je število listov liho
-če je ostanek steviloListov pri deljenju z 2 enako 1
-    izpiši "ljubi"
-sicer
-    izpiši "ne ljubi"
-```
+import "fmt"
 
-#### Rešitev v jeziku Python
+func fib(n int) int {
+    if n == 0 || n == 1 {
+        return 1
+    }
 
-Naivna rešitev:
-
-```python
-stListov = int(input("Vnesi št. marjetic: "))
-ljubi = True
-
-for i in range(stListov)
-    ljubi = not ljubi
-
-print(ljubi)
-```
-
-Optimalna rešitev:
-
-```python
-stListov = int(input("Vnesi št. marjetic: "))
-
-if stListov % 2 == 1:
-    print("Ljubi")
-else
-    print("Ne ljubi")
-```
-
-#### Rešitev v jeziku Javascript
-
-Naivna rešitev:
-
-```javascript
-stListov = parseInt(readline());
-let ljubi = true;
-
-while(stListov > 0) {
-    stListov -= 1;
-    ljubi = !ljubi;
+    return fib(n-1) + fib(n-2)
 }
-    
-console.log("Ljubi", ljubi)
+
+func main() {
+    fmt.Println(fib(6))
+}
 ```
 
-Optimalna rešitev:
+### Rešitev v programskem jeziku JavaScript
+
+Za konec pa še JavaScript, ki bo zelo verjetno naš programski jezik tudi na letošnjem poletnem taboru.
 
 ```javascript
-stListov = parseInt(readline())
+function fib(n) {
+    if (n == 1 || n == 2) {
+        return 1;
+    }
 
-if (stListov % 2 == 1)
-    console.log("Ljubi")
-else
-    console.log("Ne ljubi")
+    return fib(n-1) + fib(n-2);
+}
+
+console.log(fib(6));
 ```
