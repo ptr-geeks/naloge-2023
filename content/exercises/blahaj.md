@@ -8,7 +8,7 @@ Naš predragi morski pes Blåhaj je lačen in rabi tvojo pomoč! V njegovi soses
 je malo morje hrane, vendar jo mora zaradi časovne stiske pojesti med
 potovanjem. Pomagaj mu najti pot, da bo pojedel največ hrane!
 
-![Morski pes Blåhaj](/static/Blahaj.png)
+![Morski pes Blåhaj](/images/Blahaj.png)
 
 Kot vhod v program boš dobil 2D sliko morja v katerem se nahaja Blåhaj
 (predstavljen s črko `B`), hrana (`H`) in prazen prostor v morju (`.`).
