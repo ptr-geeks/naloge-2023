@@ -21,7 +21,8 @@ pridemo do možnosti:
 1. 20 porciji prvi kuhar in 0 porcij drugi kuhar ( \\(20*5 + 0*9 = 100\\) )
 
 To so edine celoštevilske možnosti, da sestavimo porcije za 100 čevapčičev.
-Prav tako je vredno omembe, da negativne porcije (npr. \\(-7*5 + 15*9 = 100\\) )
-*ne veljajo*.
+
+> Prav tako je vredno omembe, da negativne porcije
+> (npr. \\(-7*5 + 15*9 = 100\\) ) *ne veljajo*.
 
 V tem primeru program vrne število `3`, ker je toliko možnih rešitev.
