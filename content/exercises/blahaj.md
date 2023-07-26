@@ -12,10 +12,9 @@ potovanjem. Pomagaj mu najti pot, da bo pojedel največ hrane!
 
 Kot vhod v program boš dobil 2D sliko morja v katerem se nahaja Blåhaj
 (predstavljen s črko `B`), hrana (`H`) in prazen prostor v morju (`.`).
-Blåhaj se premika vedno premika en korak v desno lahko pa se medtem premakne
-tudi en korak gor ali dol (torej v vsak naslednji stolpec lahko gre diagonalno
-gor, diagonalno dol ali naravnost). S temi premiki mu pomagaj pojesti največ
-hrane.
+Blåhaj se vedno premika en korak v desno lahko pa se medtem premakne tudi en
+korak gor ali dol (torej v vsak naslednji stolpec lahko gre diagonalno gor,
+diagonalno dol ali naravnost). S temi premiki mu pomagaj pojesti največ hrane.
 
 Najprej kot vhodne podatke dobimo dve števili, ki sta višina in širina morja.
 Nato sledi še slika, ki je sestavljena iz zgoraj omenjenih znakov.
