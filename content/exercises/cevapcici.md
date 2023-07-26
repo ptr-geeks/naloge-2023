@@ -16,12 +16,12 @@ dva kuharja skupaj pripravita točno 10000 čevapčičev.
 Za lažji primer lahko probamo pripraviti 100 čevapčičev. Z veliko računanja
 pridemo do možnosti:
 
-1. 2 porciji prvi kuhar in 10 porcij drugi kuhar ($2*5 + 10*9 = 100$)
-1. 11 porciji prvi kuhar in 5 porcij drugi kuhar ($11*5 + 5*9 = 100$)
-1. 20 porciji prvi kuhar in 0 porcij drugi kuhar ($20*5 + 0*9 = 100$)
+1. 2 porciji prvi kuhar in 10 porcij drugi kuhar ($$2*5 + 10*9 = 100$$)
+1. 11 porciji prvi kuhar in 5 porcij drugi kuhar ($$11*5 + 5*9 = 100$$)
+1. 20 porciji prvi kuhar in 0 porcij drugi kuhar ($$20*5 + 0*9 = 100$$)
 
 To so edine celoštevilske možnosti, da sestavimo porcije za 100 čevapčičev.
-Prav tako je vredno omembe, da negativne porcije (npr. $-7*5 + 15*9 = 100$)
+Prav tako je vredno omembe, da negativne porcije (npr. $$-7*5 + 15*9 = 100$$)
 *ne veljajo*.
 
 V tem primeru program vrne število `3`, ker je toliko možnih rešitev.
