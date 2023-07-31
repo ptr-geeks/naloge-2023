@@ -1,5 +1,5 @@
 ---
-title: X. naloga - Hranjenje Blåhaja
+title: 5. naloga - Hranjenje Blåhaja
 weight: 10
 math: false
 ---
