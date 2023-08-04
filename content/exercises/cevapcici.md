@@ -1,6 +1,6 @@
 ---
 title: 2. naloga - Pojedina čevapčičev
-weight: 20
+weight: 30
 math: true
 ---
 

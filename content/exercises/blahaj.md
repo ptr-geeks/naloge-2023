@@ -1,6 +1,6 @@
 ---
 title: 5. naloga - Hranjenje Blåhaja
-weight: 10
+weight: 60
 math: false
 ---
 
