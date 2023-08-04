@@ -4,7 +4,7 @@ weight: 10
 math: true
 ---
 
-Tudi tokrat se bomo skupaj ogreli, ampak za razliko od prejšnjih let, se bomo tokrat namesto brezglavega pozdravljanja sveta in ugotavljanja, ali ga ljudi ali ne, potopili v malo bolj algoritmične vode.
+Tudi tokrat se bomo skupaj ogreli, ampak za razliko od prejšnjih let, se bomo tokrat namesto brezglavega pozdravljanja sveta in ugotavljanja, ali ga ljubi ali ne, potopili v malo bolj algoritmične vode.
 
 Fibonaccijevo zaporedje je zaporedje, kjer je vsaka številka seštevek prejšnjih dveh. Prvo omembo Fibonaccijevih števil je možno zaslediti že v zgodnji Indijski matematiki (približno 200 let pred našim štetjem), zahodni evropi pa ga je predstavil Leonardo iz Pise (Leonardo Bonacci) leta 1202. Po njemu je danes to zaporedje tudi poimenovano.
 
