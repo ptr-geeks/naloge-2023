@@ -1,5 +1,5 @@
 {
-	description = "naloge-2023";
+	description = "naloge-2024";
 	
 	inputs.nixpkgs.url = "nixpkgs/nixos-23.05";
 	inputs.flake-utils.url = "github:numtide/flake-utils";
