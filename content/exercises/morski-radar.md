@@ -49,4 +49,4 @@ od 5. do 50. km lahko vozimo 100 km/h, (0.45 h)
 od 50. do 65. km lahko vozimo samo 20 km/h, (ker pridemo na cilj že pri 60. kilometru, porabimo za ta odsek 0.5 h) 
 Odsekov, kjer bi se lahko peljali 130 ali 120, nikoli ne dosežemo.
 
-Za pot torej porabimo \\(0.02 + 0.067 + 0.45 + 0.5 = 1.207\\) ure, če odrežemo za drugim decimalnim mestom, je to \\(1.20\\).
+Za pot torej porabimo \\(0.02 + 0.057 + 0.45 + 0.5 = 1.027\\) ure, če odrežemo za drugim decimalnim mestom, je to \\(1.02\\).
