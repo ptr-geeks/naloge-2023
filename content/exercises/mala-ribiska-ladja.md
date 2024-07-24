@@ -4,7 +4,7 @@ weight: 50
 math: true
 ---
 
-V nedeljo, 9. julija 2023 zgodaj zjutraj, je Slovenska tiskovna agencija sporočila, da je mala ribiška ladja Umag 2 s hrvaške ekonomsko ekološke cone zašla na sidrišče Luke Koper. Stekla je široka reševalna akcija pod vodstvom slovenske obalne straže. Reševalna ladja Luške kapitanije Koper je že na poti. Prebija se med ladjami, ki so zasidrane na sidrišču. Čas hitro teče in upamo, da bo pomoč prispela pravočasno in ladjo Umag 2 pospremila s sidrišča nazaj do hrvaške ekonomsko ekološke cone.
+V torek, 9. julija 2024 zgodaj zjutraj, je Slovenska tiskovna agencija sporočila, da je mala ribiška ladja Umag 2 s hrvaške ekonomsko ekološke cone zašla na sidrišče Luke Koper. Stekla je široka reševalna akcija pod vodstvom slovenske obalne straže. Reševalna ladja Luške kapitanije Koper je že na poti. Prebija se med ladjami, ki so zasidrane na sidrišču. Čas hitro teče in upamo, da bo pomoč prispela pravočasno in ladjo Umag 2 pospremila s sidrišča nazaj do hrvaške ekonomsko ekološke cone.
 
 Slovenska obalna straža potrebuje pomoč programerjev, ki naj straži pošljejo rešitev, kako hitro lahko reševalna ladja Luške kapitanije Koper z vašo pomočjo prispe do izgubljene ladje Umag 2.
 

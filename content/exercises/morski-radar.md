@@ -31,7 +31,7 @@ Kot končni rezultat izpiši število ur, ki jih porabimo za pot, odrezano za dr
 
 **Izhod:**
 ```
-1.20
+1.02
 ```
 
 Glej razlago spodnjega primera za boljše razumevanje naloge!
